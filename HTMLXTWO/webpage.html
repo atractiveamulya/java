@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hi {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            width: 24%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            
+        }
+        .product img {
+
+            width: 220px;
+            height: 20vh;
+        }
+        .product-name {
+            font-weight: bold;
+        }
+        .product-price {
+            color: green;
+        }
+        .product-old-price {
+            text-decoration: line-through;
+        }
+        .product-rating {
+            color: gray;
+        }
+        .few-left {
+            color: red;
+        }
+        .classdiv{
+            background-color: black;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow: auto;
+           
+        }
+        .navbar li{
+            float: left;
+            list-style:none;
+            margin: 14px 40px;
+        }
+        a{
+            text-decoration: none;
+            color: antiquewhite;
+            
+        }
+        li:hover{
+            background-color: aqua;
+        }
+        .navbar li a:hover{
+            color: blue;
+        }
+       
+        #input{
+            float: right;
+            margin-top: 20px;
+            border-radius: 4px;
+            border-color: rgb(248, 110, 11) ;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="classdiv">
+        <nav class="navbar">
+        <ul class="hello">
+            <li><a href="https://www.google.com/search?q=slack&sca_esv=8ada79f7ea9a5b94&rlz=1C1CHBF_enIN1036IN1036&udm=2&biw=1536&bih=643&sxsrf=ADLYWIJ6eBWatDG9P0CGAyL35SSNqCndew%3A1721385728884&ei=AEOaZvbaNcKE4-EP4Jq1uQs&ved=0ahUKEwj22pDH9bKHAxVCwjgGHWBNLbcQ4dUDCBA&uact=5&oq=slack&gs_lp=Egxnd3Mtd2l6LXNlcnAiBXNsYWNrMggQABiABBixAzIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiHPVDeAliMO3ACeACQAQSYAZMDoAHsD6oBCTAuMy41LjAuMbgBA8gBAPgBAZgCB6AC0gioAgrCAgoQABiABBhDGIoFwgINEAAYgAQYsQMYQxiKBcICCxAAGIAEGLEDGIMBwgIHECMYJxjqAsICBBAjGCfCAg4QABiABBixAxiDARiKBZgDB4gGAZIHCTIuMy4xLjAuMaAH-jk&sclient=gws-wiz-serp" > Home</a></li>
+            <li><a href="file:///C:/HTML%20xworkz/HTMLXTWO/webpage.html">About</a></li>
+            <li><a href="https://www.google.com/search?q=google+workspace&sca_esv=8ada79f7ea9a5b94&rlz=1C1CHBF_enIN1036IN1036&udm=2&biw=1536&bih=643&sxsrf=ADLYWII46-uIxvyS3hjey_lAKSkgSb536Q%3A1721385758104&ei=HkOaZviLBsrG4-EP_MmqkAY&oq=goo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA2dvbyoCCAAyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhiNQ1g1YihFwAXgAkAEAmAH2AqAB0AWqAQcwLjEuMS4xuAEDyAEA-AEBmAIEoAL9BagCCsICBxAjGCcY6gLCAgQQIxgnmAMOkgcHMS4xLjEuMaAH5RE&sclient=gws-wiz-serp">click here</a></li>
+            <li><a href="">contact us</a></li>
+
+            <label for="input"></label>
+            <input id="input" type="text" placeholder="search">
+        </ul>
+        </nav>
+    </header>
+    <div class="hi">
+        <div class="product">
+            <img src="arev5_512.jpg" alt="Lancer Textile Walking Shoes" height="100" width="50">
+            <div class="product-name">Nika</div>
+            <div>Textile Walking Shoes</div>
+            <div class="product-price">Rs. 600</div>
+            <div class="product-old-price">Rs. 2099</div>
+            <div>(40% OFF)</div>
+            <div class="few-left">Only Few Left!</div>
+        </div>
+        <div class="product">
+            <img src="cikrv_512.jpg" alt="ADIDAS Men Airstride Walking Shoes">
+            <div class="product-name">ADIDAS</div>
+            <div>women Walking Shoes</div>
+            <div class="product-price">Rs. 4229</div>
+            <div class="product-old-price">Rs. 5399</div>
+            <div>(50% OFF)</div>
+        </div>
+        <div class="product">
+            <img src="images (1).jpeg" alt="WROGN Men Running Shoes">
+            <div class="product-name">EIlA</div>
+            <div>shine Shoes</div>
+            <div class="product-price">Rs. 504</div>
+            <div class="product-old-price">Rs. 1099</div>
+            <div>(57% OFF)</div>
+            <div class="product-rating">4.7 ★ | 125</div>
+        </div>
+        <div class="product">
+            <img src="images (2).jpeg" alt="WROGN Men Running Shoes">
+            <div class="product-name">NURHI</div>
+            <div>Shoes</div>
+            <div class="product-price">Rs. 1504</div>
+            <div class="product-old-price">Rs. 3499</div>
+            <div>(60% OFF)</div>
+            <div class="product-rating">3.2 ★ | 127</div>
+        </div>
+        <div class="product">
+            <img src="shoes.pnj.webp" alt="Lancer Men Walking Shoes">
+            <div class="product-name">Lancer</div>
+            <div>Men Walking Shoes</div>
+            <div class="product-price">Rs. 749</div>
+            <div class="product-old-price">Rs. 1099</div>
+            <div>(1s0% OFF)</div>
+            <div class="few-left">Only Few Left!</div>
+        </div>
+        <div class="product">
+            <img src="shoeses.jpg" alt="Calcetto Men Mesh Running Shoes">
+            <div class="product-name">Calcetto</div>
+            <div>Men Mesh Running Shoes</div>
+            <div class="product-price">Rs. 1624</div>
+            <div class="product-old-price">Rs. 2499</div>
+            <div>(35% OFF)</div>
+            <div class="few-left">Only Few Left!</div>
+        </div>
+        <div class="product">
+            <img src="flynce-sneake.webp" alt="ADIDAS Men ZapCore Running Shoes">
+            <div class="product-name">ADIDAS</div>
+            <div>Men ZapCore Running Shoes</div>
+            <div class="product-price">Rs. 2639</div>
+            <div class="product-old-price">Rs. 4799</div>
+            <div>(45% OFF)</div>
+            <div class="product-rating">4.5 ★ | 149</div>
+        </div>
+        <div class="product">
+            <img src="images.jpeg" alt="Lancer Textile Walking Shoes">
+            <div class="product-name">Lancer</div>
+            <div>Textile Walking Shoes</div>
+            <div class="product-price">Rs. 2499</div>
+            <div class="product-old-price">Rs. 3999</div>
+            <div>(30% OFF)</div>
+            <div class="few-left">Only Few Left!</div>
+        </div>
+        
+    </div>
+</body>
+</html>

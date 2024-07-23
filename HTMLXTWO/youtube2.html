@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            color:black;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color:pink;
+        }
+        .navbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left-section img {
+            width: 90px;
+            margin-right: 20px;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            size: 150;
+            outline: none;
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+            background-color: #cbcbcb;
+            color: #fff;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: none;
+            
+            border-radius: 0 25px 25px 0;
+            background-color: #ffb7b7;
+            color: #fff;
+            cursor: pointer;
+        }
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .icons img {
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .channel-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #b0b0b0;
+            border-radius: 10px;
+        }
+        .channel-info .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .channel-info .subscribe-btn {
+            background-color: red;
+            color: black;
+            border: none;
+            border-radius: 2px;
+            padding: 10px 16px;
+            border-radius: 25px  25px 25px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            float: left;
+        }
+        .channel-info .actions {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .actions img {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+      
+        .sidebar {
+            flex: 1;
+            background-color:wheat;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar .video {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sidebar .video-info h4 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .sidebar .video-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+        .
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <img src="youtube.png" ;style="height:40px ; width: 40px;" alt="YouTube Logo">
+            <div>
+              <span class="searchbar">  <input id="search"  placeholder="Search" size="100" ;style="outline: none; border-radius: 20px;"      >
+                <i class="fa-solid fa-magnifying-glass"></i></span>
+                
+            </div>
+        </div>
+        <div class="icons">
+            <img src="video.png" alt="Upload Icon">
+            <img src="notification.png" alt="Notification Icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/j2sQv0usFSA" title="Bayasi Bayasi Video Song - LoveLi | Vasishta Simha | J Anoop Seelin | Abhuvanasa Creations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="channel-info">
+                <div class="left-section">
+                  
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="font-weight: bold;">Abhuvanasa|vasista |lovely movies</div>
+                        <div style="font-size: 14px;color: #ffffff;">200K subscribers</div>
+                    </div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+                <div class="actions">
+                    <img src="like.png" alt="Like Icon">
+                    <span style="  margin-left: 5px;margin-right: 15px;">919K</span>
+                    <img src="dont-like.png" alt="Dislike Icon">
+                    <img src="share.png" alt="Share Icon">
+                    <img src="more.png" alt="More Icon">
+                </div>
+            </div>
+            
+        </div>
+        <div class="sidebar">
+            <div class="video" >
+                <iframe  style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/CyYU2C5wu3k" title="CHANDAN SHETTY - nana Preeti sulala kannada pop song ||CV Adda||" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Nanna Preethi Sulalla || CHANDAN SHETTY ||</h4>
+                    <p>Chandan Shetty • 8m views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe   style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/F3Td3_c96vo?list=RDGMEM916WJxafRUGgOvd6dVJkeQ" title="Anaganaga Oka Uru Video Song || Hello Video Songs || Akhil Akkineni, Kalyani Priyadarshan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Anaganaga okk uru || Hello vedio song|| Akil ||</h4>
+                    <p>Suraj KM • 5.0m views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/x6Q7c9RyMzk?list=RDGMEM916WJxafRUGgOvd6dVJkeQ" title="Maari 2 - Rowdy Baby (Video Song) | Dhanush, Sai Pallavi | Yuvan Shankar Raja | Balaji Mohan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4 >Mari 2 rowdy baby|dhanush,pallavi/h4>
+                    <p>WonderBar Films• 6.6M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/qH2CAvdMxS4" title="Last Benchu Party - Video Song | Kirik Party | B. Ajaneesh Loknath | Rakshit Shetty | Rishab Shetty" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Kirik Party |Rakshith Shetty</h4>
+                    <p>Paramvah  Music • 350k views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe  style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/fRD_3vJagxk" title="Master - Vaathi Coming Video | Thalapathy Vijay | Anirudh Ravichander | Lokesh Kanagaraj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>Master Vathi Comming song|Anirud RaviChandr</h4>
+                    <p>Sony Music South • 14M views</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

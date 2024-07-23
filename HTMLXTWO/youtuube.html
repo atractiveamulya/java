@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <style>
+    /* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    font-size: 1.6em;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.video {
+    margin: 20px 0;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-list {
+    margin: 20px 0;
+}
+
+.video-item {
+    margin-bottom: 20px;
+}
+
+.video-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>YouTube-Like Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Channels</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <section class="video">
+        <div class="container">
+            <h2>Featured Video</h2>
+            <div class="video-wrapper">
+                <iframe width="260" height="315" src="https://www.youtube.com/watch?v=LAdp3ZHeP4Q"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-list">
+        <div class="container">
+            <h2>More Videos</h2>
+            <div class="video-item">
+                <h3>Video Title 1</h3>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video Title 2</h3>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <h3>Video Title 3</h3>
+                <iframe width="280" height="157" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 YouTube-Like Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
